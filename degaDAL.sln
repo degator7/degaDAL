@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29409.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "degaDAL", "degaDAL\degaDAL.csproj", "{32972A83-47FD-4018-B878-22FB33970A28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test", "test\test.csproj", "{FC3760F6-AABD-4405-9C33-75C778266889}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32972A83-47FD-4018-B878-22FB33970A28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32972A83-47FD-4018-B878-22FB33970A28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32972A83-47FD-4018-B878-22FB33970A28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32972A83-47FD-4018-B878-22FB33970A28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC3760F6-AABD-4405-9C33-75C778266889}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC3760F6-AABD-4405-9C33-75C778266889}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC3760F6-AABD-4405-9C33-75C778266889}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC3760F6-AABD-4405-9C33-75C778266889}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8C15F4FF-7611-40C0-B515-6C6C490A6D1C}
+	EndGlobalSection
+EndGlobal

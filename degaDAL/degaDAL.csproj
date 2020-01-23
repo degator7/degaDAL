@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{32972A83-47FD-4018-B878-22FB33970A28}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>dega</RootNamespace>
+    <AssemblyName>degaDAL</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CachingMechanism.cs" />
+    <Compile Include="Common\Configuration.cs" />
+    <Compile Include="Common\ConfigurationChangedEventArgs.cs" />
+    <Compile Include="Common\ConfigurationSourceChangedEventArgs.cs" />
+    <Compile Include="Common\CustomConfigurationElementCollection.cs" />
+    <Compile Include="Common\GenericEnumeratorWrapper.cs" />
+    <Compile Include="Common\Guard.cs" />
+    <Compile Include="Common\IConfigurationSource.cs" />
+    <Compile Include="Common\IDesignConfigurationSource.cs" />
+    <Compile Include="Common\IObjectWithName.cs" />
+    <Compile Include="Common\IObjectWithNameAndType.cs" />
+    <Compile Include="Common\IProtectedConfigurationSource.cs" />
+    <Compile Include="Common\NamedConfigurationElement.cs" />
+    <Compile Include="Common\PolymorphicConfigurationElementCollection.cs" />
+    <Compile Include="Common\ResourceStringLoader.cs" />
+    <Compile Include="Common\WrappedAsyncOperation.cs" />
+    <Compile Include="Configuration\DatabaseData.cs" />
+    <Compile Include="Configuration\DatabaseSettings.cs" />
+    <Compile Include="Configuration\DatabaseSyntheticConfigSettings.cs" />
+    <Compile Include="Configuration\DbProviderMapping.cs" />
+    <Compile Include="Configuration\DesignResources.cs" />
+    <Compile Include="ConnectionString.cs" />
+    <Compile Include="DaabAsyncResult.cs" />
+    <Compile Include="Database.cs" />
+    <Compile Include="DatabaseConnectionWrapper.cs" />
+    <Compile Include="DatabaseProviderFactory.cs" />
+    <Compile Include="DataReaderWrapper.cs" />
+    <Compile Include="degaDataAccessLayer.cs" />
+    <Compile Include="encdec.cs" />
+    <Compile Include="Oracle\Configuration\DesignResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DesignResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Oracle\Configuration\NameTypeConfigurationElementCollection.cs" />
+    <Compile Include="Oracle\Configuration\OracleConnectionData.cs" />
+    <Compile Include="Oracle\Configuration\OracleConnectionSettings.cs" />
+    <Compile Include="Oracle\Configuration\OracleDatabaseData.cs" />
+    <Compile Include="Oracle\Configuration\OraclePackageData.cs" />
+    <Compile Include="Oracle\IOraclePackage.cs" />
+    <Compile Include="Oracle\OracleDatabase.cs" />
+    <Compile Include="Oracle\OracleDataReaderWrapper.cs" />
+    <Compile Include="ParameterCache.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Sql\Configuration\SqlDatabaseData.cs" />
+    <Compile Include="Sql\RefCountingXmlReader.cs" />
+    <Compile Include="Sql\SqlDatabase.cs" />
+    <Compile Include="TransactionScopeConnections.cs" />
+    <Compile Include="UpdateBehavior.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Oracle\Configuration\DesignResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DesignResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
