@@ -1,49 +1,44 @@
 ﻿
-using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Configuration;
 using dega.Common.Configuration;
 using dega.Configuration;
-using dega.Oracle.Configuration;
-using System.ComponentModel;
-using System.Resources;
+using System;
+using System.Configuration;
 
 namespace dega.Oracle.Configuration
 {
-	/// <summary>
-	/// Oracle-specific configuration section.
-	/// </summary>
+    /// <summary>
+    /// Oracle-specific configuration section.
+    /// </summary>
     [ResourceDescription(typeof(DesignResources), "OracleConnectionSettingsDescription")]
     [ResourceDisplayName(typeof(DesignResources), "OracleConnectionSettingsDisplayName")]
-	public class OracleConnectionSettings : SerializableConfigurationSection
-	{
-		private const string oracleConnectionDataCollectionProperty = "";
+    public class OracleConnectionSettings : SerializableConfigurationSection
+    {
+        private const string oracleConnectionDataCollectionProperty = "";
 
-		/// <summary>
-		/// The section name for the <see cref="OracleConnectionSettings"/>.
-		/// </summary>
-		public const string SectionName = "oracleConnectionSettings";
+        /// <summary>
+        /// The section name for the <see cref="OracleConnectionSettings"/>.
+        /// </summary>
+        public const string SectionName = "oracleConnectionSettings";
 
-		/// <summary>
-		/// Initializes a new instance of the <see cref="OracleConnectionSettings"/> class with default values.
-		/// </summary>
-		public OracleConnectionSettings()
-		{
-		}
+        /// <summary>
+        /// Initializes a new instance of the <see cref="OracleConnectionSettings"/> class with default values.
+        /// </summary>
+        public OracleConnectionSettings()
+        {
+        }
 
-		/// <summary>
-		/// Retrieves the <see cref="OracleConnectionSettings"/> from the configuration source.
-		/// </summary>
-		/// <param name="configurationSource">The configuration source to retrieve the configuration from.</param>
-		/// <returns>The configuration section, or <see langword="null"/> (<b>Nothing</b> in Visual Basic) 
-		/// if not present in the configuration source.</returns>
-		public static OracleConnectionSettings GetSettings(IConfigurationSource configurationSource)
-		{
-		    if (configurationSource == null) throw new ArgumentNullException("configurationSource");
+        /// <summary>
+        /// Retrieves the <see cref="OracleConnectionSettings"/> from the configuration source.
+        /// </summary>
+        /// <param name="configurationSource">The configuration source to retrieve the configuration from.</param>
+        /// <returns>The configuration section, or <see langword="null"/> (<b>Nothing</b> in Visual Basic) 
+        /// if not present in the configuration source.</returns>
+        public static OracleConnectionSettings GetSettings(IConfigurationSource configurationSource)
+        {
+            if (configurationSource == null) throw new ArgumentNullException("configurationSource");
 
-			return configurationSource.GetSection(SectionName) as OracleConnectionSettings;
-		}
+            return configurationSource.GetSection(SectionName) as OracleConnectionSettings;
+        }
 
         /// <summary>
         /// Collection of Oracle-specific connection information.

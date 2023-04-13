@@ -1,10 +1,10 @@
-﻿using System;
+﻿using dega.Common.Utility;
+using dega.Properties;
+using System;
 using System.Data;
 using System.Data.Common;
 using System.Globalization;
 using System.Transactions;
-using dega.Common.Utility;
-using dega.Properties;
 
 namespace dega
 {

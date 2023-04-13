@@ -1,14 +1,13 @@
-﻿using System;
+﻿using dega.Sql;
+using degaEncDec;
+using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Data.Common;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
-using System.Data;
-using System.Collections;
-using System.Data.SqlClient;
-using System.Configuration;
-using dega;
-using dega.Sql;
-using System.Data.Common;
 
 namespace dega
 {
@@ -120,7 +119,7 @@ namespace dega
 
         #region "DAL"
 
-        
+
 
         public int SaveBinary(byte[] binary, string Table, string FieldName, string NameID, int ValueID)
         {

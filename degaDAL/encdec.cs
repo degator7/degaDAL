@@ -1,17 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace dega
+namespace degaEncDec
 {
     //stackoverflow.com/questions/202011/encrypt-and-decrypt-a-string
+
     public class encdec
     {
-        private static byte[] _salt = Encoding.ASCII.GetBytes("Daniel7ABCD999");
+        private static byte[] _salt = Encoding.ASCII.GetBytes("degator7ABCD555");
 
         /// <summary>
         /// Encrypt the given string using AES.  The string can be decrypted using 
@@ -37,6 +35,8 @@ namespace dega
                 // Create a RijndaelManaged object
                 aesAlg = new RijndaelManaged();
                 aesAlg.Key = key.GetBytes(aesAlg.KeySize / 8);
+
+                aesAlg.Padding = PaddingMode.PKCS7;
 
                 // Create a decryptor to perform the stream transform.
                 ICryptoTransform encryptor = aesAlg.CreateEncryptor(aesAlg.Key, aesAlg.IV);
@@ -106,6 +106,10 @@ namespace dega
                     // Get the initialization vector from the encrypted stream
                     aesAlg.IV = ReadByteArray(msDecrypt);
                     // Create a decrytor to perform the stream transform.
+
+                    aesAlg.Padding = PaddingMode.PKCS7;
+
+
                     ICryptoTransform decryptor = aesAlg.CreateDecryptor(aesAlg.Key, aesAlg.IV);
                     using (CryptoStream csDecrypt = new CryptoStream(msDecrypt, decryptor, CryptoStreamMode.Read))
                     {
@@ -143,6 +147,11 @@ namespace dega
 
             return buffer;
         }
+
+
+
+
     }
+
 }
 

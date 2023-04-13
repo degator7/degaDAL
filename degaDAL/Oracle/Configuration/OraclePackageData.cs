@@ -1,18 +1,8 @@
 ﻿
 
-using System.Configuration;
 using dega.Common.Configuration;
-using dega.Oracle;
-using dega.Common.Configuration.Design;
 using dega.Configuration;
-using System;
-using System.Xml;
-using System.ComponentModel;
-using dega.Properties;
-using dega.Common;
-using System.Globalization;
-using System.Collections.Generic;
-using System.Resources;
+using System.Configuration;
 
 namespace dega.Oracle.Configuration
 {
@@ -30,7 +20,7 @@ namespace dega.Oracle.Configuration
     [ResourceDisplayName(typeof(DesignResources), "OraclePackageDataDisplayName")]
     public class OraclePackageData : Common.Configuration.NamedConfigurationElement, IOraclePackage
     {
-		private const string prefixProperty = "prefix";
+        private const string prefixProperty = "prefix";
 
         /// <summary>
         /// <para>Initializes a new instance of the <see cref="OraclePackageData"/> class.</para>
@@ -60,21 +50,21 @@ namespace dega.Oracle.Configuration
         /// <value>
         /// <para>The prefix of the stored procedures that are in the package in Oracle.</para>
         /// </value>
-		[ConfigurationProperty(prefixProperty, IsRequired= true)]
+		[ConfigurationProperty(prefixProperty, IsRequired = true)]
         [ResourceDescription(typeof(DesignResources), "OraclePackageDataPrefixDescription")]
         [ResourceDisplayName(typeof(DesignResources), "OraclePackageDataPrefixDisplayName")]
         [ViewModel(CommonDesignTime.ViewModelTypeNames.CollectionEditorContainedElementProperty)]
-		public string Prefix
-		{
-			get
-			{
-				return (string)this[prefixProperty];
-			}
-			set
-			{
-				this[prefixProperty] = value;
-			}
-		}
+        public string Prefix
+        {
+            get
+            {
+                return (string)this[prefixProperty];
+            }
+            set
+            {
+                this[prefixProperty] = value;
+            }
+        }
         /// <summary>
         /// Gets or sets the name of the element.
         /// </summary>

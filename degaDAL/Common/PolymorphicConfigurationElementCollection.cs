@@ -1,9 +1,8 @@
 ﻿
 using System;
-using System.Configuration;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Xml;
-using dega.Common.Configuration;
 
 namespace dega.Common.Configuration
 {

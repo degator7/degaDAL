@@ -1,8 +1,8 @@
 ﻿
-using System;
-using System.Configuration;
 using dega.Common.Configuration;
 using dega.Configuration;
+using System;
+using System.Configuration;
 
 namespace dega.Sql.Configuration
 {

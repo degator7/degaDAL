@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using dega.Configuration;
+using dega.Properties;
+using System;
+using System.ComponentModel;
 using System.Configuration;
 using System.Globalization;
-using System.Xml;
-using dega.Configuration;
-using System.ComponentModel;
-using dega.Properties;
 using System.Resources;
+using System.Xml;
 
 namespace dega.Common.Configuration
 {

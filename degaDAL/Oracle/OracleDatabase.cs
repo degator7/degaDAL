@@ -1,12 +1,12 @@
-﻿using System;
+﻿using dega.Common.Configuration;
+using dega.Oracle.Configuration;
+using dega.Properties;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Common;
 using System.Data.OracleClient;
 using System.Globalization;
-using dega.Common.Configuration;
-using dega.Oracle.Configuration;
-using dega.Properties;
 
 namespace dega.Oracle
 {

@@ -1,15 +1,12 @@
 ﻿
 
+using dega.Common.Configuration;
+//using dega.Common.Configuration.Design.Validation;
+using dega.Properties;
 using System;
 using System.ComponentModel;
 using System.Configuration;
 using System.Resources;
-using dega;
-using dega.Common.Configuration;
-using dega.Common.Configuration.Design;
-//using dega.Common.Configuration.Design.Validation;
-using dega.Configuration;
-using dega.Properties;
 
 namespace dega.Configuration
 {

@@ -1,8 +1,7 @@
-﻿using System;
-using System.Configuration;
-using dega.Common.Configuration;
-using dega.Common.Configuration.Design;
+﻿using dega.Common.Configuration;
+using System;
 using System.ComponentModel;
+using System.Configuration;
 
 namespace dega.Configuration
 {

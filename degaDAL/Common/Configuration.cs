@@ -1,5 +1,5 @@
-﻿using System;
-using dega.Properties;
+﻿using dega.Properties;
+using System;
 
 namespace dega.Common.Configuration
 {

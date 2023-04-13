@@ -1,20 +1,18 @@
 ﻿
+using dega.Common.Configuration;
+using dega.Common.Utility;
+using dega.Configuration;
+using dega.Properties;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data.Common;
-using System.Data.SqlClient;
 using System.Globalization;
 using System.Linq;
 using System.Xml;
 using System.Xml.Schema;
 using System.Xml.Serialization;
-using dega.Common.Configuration;
-using dega.Common.Utility;
-using dega.Configuration;
-using dega.Properties;
-using dega.Sql;
 
 namespace dega
 {
@@ -147,7 +145,7 @@ namespace dega
                 return data.BuildDatabase();
             }
 
-           
+
 
 
         }

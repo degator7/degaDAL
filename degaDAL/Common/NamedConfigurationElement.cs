@@ -1,9 +1,8 @@
 ﻿
-using System.Configuration;
-using System.Xml;
-using dega.Common.Configuration.Design;
 using dega.Configuration;
 using dega.Oracle.Configuration;
+using System.Configuration;
+using System.Xml;
 
 
 namespace dega.Common.Configuration

@@ -1,11 +1,11 @@
 ﻿
 
-using System.Configuration;
 using dega.Common.Configuration;
-using System.ComponentModel;
-using System;
-using dega.Properties;
 using dega.Configuration;
+using dega.Properties;
+using System;
+using System.ComponentModel;
+using System.Configuration;
 
 namespace dega.Oracle.Configuration
 {
@@ -34,8 +34,8 @@ namespace dega.Oracle.Configuration
         [ResourceDisplayName(typeof(DesignResources), "OracleConnectionDataNameDisplayName")]
         public override string Name
         {
-            get{ return base.Name; }
-            set{ base.Name = value; }
+            get { return base.Name; }
+            set { base.Name = value; }
         }
 
         /// <summary>

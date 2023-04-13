@@ -1,12 +1,12 @@
-﻿using System;
+﻿using dega.Common.Configuration;
+using dega.Common.Utility;
+using dega.Properties;
+using dega.Sql.Configuration;
+using System;
 using System.Data;
 using System.Data.Common;
 using System.Data.SqlClient;
 using System.Xml;
-using dega.Common.Configuration;
-using dega.Common.Utility;
-using dega.Properties;
-using dega.Sql.Configuration;
 
 namespace dega.Sql
 {
@@ -1021,7 +1021,7 @@ namespace dega.Sql
             return BeginExecuteReader(transaction, storedProcedureName, callback, state, parameterValues);
         }
 
-      
+
 
 
 

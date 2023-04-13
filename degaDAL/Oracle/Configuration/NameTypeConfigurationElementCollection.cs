@@ -1,13 +1,4 @@
-﻿
-
-using System.Configuration;
-using dega.Common.Configuration;
-using System;
-using System.Xml;
-using dega.Properties;
-using System.Globalization;
-
-namespace dega.Oracle.Configuration
+﻿namespace dega.Oracle.Configuration
 {
     /// <summary>
     /// Represents a collection of <see cref="NameTypeConfigurationElement"/> objects.

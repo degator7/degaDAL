@@ -1,4 +1,9 @@
 ﻿
+using dega.Common.Configuration;
+using dega.Common.Utility;
+using dega.Oracle;
+using dega.Properties;
+using dega.Sql;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -6,11 +11,6 @@ using System.Data.Common;
 using System.Data.OracleClient;
 using System.Data.SqlClient;
 using System.Globalization;
-using dega.Common.Configuration;
-using dega.Common.Utility;
-using dega.Oracle;
-using dega.Properties;
-using dega.Sql;
 
 namespace dega.Configuration
 {

@@ -1,7 +1,6 @@
-﻿using System;
-using System.Globalization;
+﻿using dega.Properties;
+using System;
 using System.Text;
-using dega.Properties;
 
 namespace dega
 {

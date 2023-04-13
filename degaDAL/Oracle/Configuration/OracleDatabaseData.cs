@@ -1,10 +1,10 @@
 ﻿
+using dega.Common.Configuration;
+using dega.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
-using dega.Common.Configuration;
-using dega.Configuration;
 
 namespace dega.Oracle.Configuration
 {
